@@ -10,5 +10,24 @@
         <header>
             <?php include('./header.php') ?>
         </header>
+        <?php
+        $host = "localhost";
+        $user = "root";
+        $pass = "";
+        $database = "hobo22";
+    
+        $conn = new mysqli($host, $user, $pass, $database); 
+               $sql = "";  //SQL code hierin 
+               
+               $result = $conn->query($sql); 
+               
+               if($result){
+                   while ($row = $result->fetch_object()){
+
+               }
+               $result->close();
+               $conn->close();
+               }
+        ?>
     </body>
 </html>
