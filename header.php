@@ -9,7 +9,7 @@
     <meta name="keywords" content="">
     <title>Header</title>
 
-    <link rel="stylesheet" type="text/css" href="CSS/common.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/style.css"> 
 
 </head>
 <header id="nav-bar">
