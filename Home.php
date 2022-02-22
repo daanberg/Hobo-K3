@@ -17,7 +17,7 @@
         $database = "hobo22";
     
         $conn = new mysqli($host, $user, $pass, $database); 
-               $sql = "";  //SQL code hierin 
+               $sql = "SELECT SerieID FROM serie LIMIT 5;";  //SQL code hierin 
                
                $result = $conn->query($sql); 
                
