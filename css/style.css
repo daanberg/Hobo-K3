@@ -3,16 +3,11 @@
         height: 100px;
     }
     #nav-bar img{
-        height: 80vh;
-        position: relative;
-        left: -25vw;
-        top: -32vh;
+        display: flex;
+        
     }
     .acc{
-        font-size: 4rem;
-        position: relative;
-        top: -68.5vh;
-        left: 20vw;
+        display: flex;
     }
 
     a:link, a:visited{
@@ -21,18 +16,14 @@
     } 
 
     ul li{
-        list-style: none;
-        text-decoration: none;
-        margin-left: 3vw;
-        font-size: 2.5rem;
-        margin-top: 1.5vh;
+        display: flex;
     }
 
     #navbar{
-      position: relative;
-      top: -43vh;
-      left: -3vw;
+        display: flex;
+        
     }
+    
     
 
 

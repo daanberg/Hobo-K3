@@ -15,7 +15,7 @@
 </head>
 <body>
     <header id="nav-bar">
-    <img src="img/logo.png" alt="Logo">
+    <img src="img/logo2.png" alt="Logo">
     <a href="#" class="acc"><i class="bi bi-person-circle"></i></a>
         <nav>
             <section id="navbar">

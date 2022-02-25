@@ -17,6 +17,8 @@
         $database = "hobo22";   
 
         ?>
+
+        <button type="button" onclick="alert('Hello world!')">Click Me!</button>
     <section>
         <h1>Trending deze week</h1>
         <?php
