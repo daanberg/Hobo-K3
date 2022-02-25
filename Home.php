@@ -21,20 +21,21 @@
         <h1>Trending deze week</h1>
         <?php
             $conn = new mysqli($host, $user, $pass, $database); 
-             $sql = "SELECT SerieId FROM Serie LIMIT 5;";  //SQL code hierin 
+             $sql = "SELECT SerieID FROM serie LIMIT 5;";  //SQL code hierin 
              
              $result = $conn->query($sql); 
              
              if($result){
-                while ($row = $result->fetch_array(MYSQLI_BOTH)){
+                foreach($result->fetch_all() as $row){
                     // echo $row[0]."<br>";
-                    echo "<img src='img/".$row[0].".jpg' >";
+                    // var_dump($row);
+                    echo "<img src='img/0000".$row[0].".jpg' >";
             }
              $result->close();
              $conn->close();
              }
         ?>
-        <?php
+        <!-- <?php
             $conn = new mysqli($host, $user, $pass, $database); 
                $sql = "SELECT SerieTitel FROM Serie LIMIT 5;";  //SQL code hierin 
                
@@ -47,7 +48,7 @@
                $result->close();
                $conn->close();
                }
-        ?>
+        ?> -->
     </section>
     </body>
 </html>
