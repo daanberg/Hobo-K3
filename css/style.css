@@ -1,0 +1,17 @@
+*{
+    background-color: #483D3D;
+}
+
+button{
+    background-color:rgba(255, 255, 255, 0.548);
+    border: none;
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    float: right;
+}
+
+img
