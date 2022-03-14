@@ -17,20 +17,15 @@
         $database = "hobo22";   
 
         ?>
-
-        <button type="button" onclick="alert('Hello world!')">Click Me!</button>
-    <section>
-        <h1>Trending deze week</h1>
+        
         <?php
             $conn = new mysqli($host, $user, $pass, $database); 
-             $sql = "SELECT SerieID FROM serie LIMIT 5;";  //SQL code hierin 
+             $sql = "SELECT SerieID FROM serie LIMIT 5;"; 
              
              $result = $conn->query($sql); 
              
              if($result){
                 foreach($result->fetch_all() as $row){
-                    // echo $row[0]."<br>";
-                    // var_dump($row);
                     echo "<img src='img/0000".$row[0].".jpg' >";
             }
              $result->close();
@@ -39,13 +34,13 @@
         ?>
         <!-- <?php
             $conn = new mysqli($host, $user, $pass, $database); 
-               $sql = "SELECT SerieTitel FROM Serie LIMIT 5;";  //SQL code hierin 
+               $sql = "SELECT SerieTitel FROM Serie LIMIT 5;";
                
                $result = $conn->query($sql); 
                
                if($result){
                    while ($row = $result->fetch_object()){
-                    echo $row->SerieTitel."<br>"; //laat de resultaten van variabel SQL zien
+                    echo $row->SerieTitel."<br>";
                }
                $result->close();
                $conn->close();
