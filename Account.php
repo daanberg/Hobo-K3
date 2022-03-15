@@ -8,10 +8,22 @@
     <title>Account</title>
 </head>
 <body>
-    <button type="button">profiel bewerken</button> 
-
-        <img src="./img/DaanPFP.png">
-        <img src="./img/AddAccount.png">
-        <p>Daan</p> <p>Toevoegen</p>
+    <button type="button" id="Button">profiel bewerken</button> 
+            
+    
+    
+    
+    
+    
+    <section id="Alles">
+            <section id="Pfp1">
+                <img src="./img/DaanPFP.jpg" alt="Pfp Daan">
+                <p>Daan</p>
+            </section> 
+            <section id="Pfp2">
+                <img src="./img/AddAccount.png" alt="Add Pfp">
+                <p>Toevoegen</p>
+            </section>
+    </section>
 </body>
 </html>
