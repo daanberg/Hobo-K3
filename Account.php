@@ -9,6 +9,9 @@
 </head>
 <body>
     <button type="button">profiel bewerken</button> 
-    <img src="./img/DaanPFP.jpg">
+
+        <img src="./img/DaanPFP.png">
+        <img src="./img/AddAccount.png">
+        <p>Daan</p> <p>Toevoegen</p>
 </body>
 </html>
