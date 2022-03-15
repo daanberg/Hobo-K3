@@ -8,13 +8,7 @@
     <title>Account</title>
 </head>
 <body>
-    <button type="button" id="Button">profiel bewerken</button> 
-            
-    
-    
-    
-    
-    
+    <button type="button" id="Button" onclick="window.location.href='./Profile_edit.php'">profiel bewerken</button>
     <section id="Alles">
             <section id="Pfp1">
                 <img src="./img/DaanPFP.jpg" alt="Pfp Daan">
