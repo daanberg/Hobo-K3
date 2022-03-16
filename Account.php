@@ -11,11 +11,11 @@
     <button type="button" id="Button" onclick="window.location.href='./Profile_edit.php'">profiel bewerken</button>
     <section id="Alles">
             <section id="Pfp1">
-                <img src="./img/DaanPFP.jpg" alt="Pfp Daan">
+                <img class="img1" src="./img/DaanPFP.jpg" alt="Pfp Daan">
                 <p>Daan</p>
             </section> 
             <section id="Pfp2">
-                <img src="./img/AddAccount.png" alt="Add Pfp">
+                <img class="img1" src="./img/AddAccount.png" alt="Add Pfp">
                 <p>Toevoegen</p>
             </section>
     </section>

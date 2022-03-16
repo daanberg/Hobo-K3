@@ -15,12 +15,6 @@
     border-radius: 4px;
     float: right;
 }
-    img{
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-        margin: 0 20px;
-    }
 
     #Alles{
         display: flex;
@@ -29,6 +23,13 @@
         justify-content: center;
         padding-top: 10vw;
         color: #ffffff;
+    }
+
+    .img1{
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        margin: 0 20px;
     }
 
     #Pfp1{
