@@ -12,12 +12,13 @@
     <section id="Alles">
             <section id="Pfp1">
                 <img class="img1" src="./img/DaanPFP.jpg" alt="Pfp Daan">
-                <p>Daan</p>
+                <A HREF="./Home.php">Daan</A>
             </section> 
             <section id="Pfp2">
                 <img class="img1" src="./img/AddAccount.png" alt="Add Pfp">
-                <p>Toevoegen</p>
+                <A HREF="#">Account toevoegen</A>
             </section>
+
     </section>
 </body>
 </html>

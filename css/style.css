@@ -1,20 +1,35 @@
 *{
     background-color: #483D3D;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-#Button{
-    display: flex;
-    background-color:#ffffff8c;
-    border: none;
-    padding: 12px 26px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 4px;
-    float: right;
+#Pfp1{
+    flex-direction: column;
 }
+
+#Pfp2{
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1200px){ /*Desktop*/
+
+    #Button{
+        display: flex;
+        background-color:#ffffff8c;
+        border: none;
+        padding: 12px 26px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;
+        float: right;
+    }
 
     #Alles{
         display: flex;
@@ -25,20 +40,47 @@
         color: #ffffff;
     }
 
-    .img1{
-        border-radius: 50%;
+   .img1{
+        display: block;
+        border-radius: 5%;
         height: 150px;
         width: 150px;
         margin: 0 20px;
+   }
+
+   
+}
+    
+@media screen and (min-width: 100px) and (max-width:767.9px){ /*Telefoon*/
+    #Button{            display: flex;
+        background-color:#ffffff8c;
+        border: none;
+        padding: 12px 10px;            text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+            border-radius: 4px;
+            float: right;
+        }
+
+        #Alles{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding-top: 70vw;
+            color: #ffffff;
+        }
+        
+           .img1{
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                margin: 0 20px;
+            } 
     }
-
-    #Pfp1{
-        flex-direction: column;
+    
+    @media screen and (min-width: 768px) and (max-width:1199px){ /*Tablet*/
+        
     }
-
-    #Pfp2{
-        flex-direction: column;
-    }
-
-
 
