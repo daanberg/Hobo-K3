@@ -15,9 +15,10 @@
 </head>
 <body>
     <header id="nav-bar">
+    <section id="nv">
     <img src="img/logo2.png" alt="Logo">
-    <a href="#" class="acc"><i class="bi bi-person-circle"></i></a>
-        <nav>
+    <a href="#" class="acc"><i class="bi bi-person-circle"></i></a> 
+    <nav>
             <section id="navbar">
                 <ul>
                     <li><a href="./Home.php"><i class="bi bi-house-door"></i></a></li>
@@ -42,6 +43,7 @@
             </details>
             </section> -->
         </nav>
+        </section>
     </header>
     </body>
 </html>
