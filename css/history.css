@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:700");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    background-color: #483D3D;
+}
+
+*:before,
+*:after{
+    padding: 0;
+    box-sizing: border-box;
+}
+nav img {
+    margin-left: -40px;
+}
+
+nav{    
+    height: 10vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1px;
+    padding: 0 10px;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: wheat;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #ffffff;
+}
+a:hover:after{
+    width: 100%;
+}   
+
+#main h1 {
+    display: flex;
+    height: 20vh;
+    width: 15vw;
+}
+
+#main {
+    display: flex;
+    height: 10vh;
+    width: 15vw;
+}
+
+#main img {
+    height: 10vh;
+    width: 15vw;
+}
+
+/* dit hoort bij de hamburger */
+
