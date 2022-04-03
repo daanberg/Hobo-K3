@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:700");
 
 * {
-    margin: 0;
-    padding: 0;
     font-family: poppins;
     background-color: #483D3D;
 }
@@ -12,13 +10,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-nav img {
-    margin-left: -40px;
-}
 
 nav{    
     height: 10vh;
-    width: 40vw;
+    width: 35vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -52,22 +47,17 @@ a:hover:after{
     width: 100%;
 }   
 
-#main h1 {
+
+.row-home{
     display: flex;
-    height: 20vh;
-    width: 15vw;
+    justify-content: center;
+    align-items: center;
+}
+.row-home img{
+    width: 250px;
+    margin: 5px;
 }
 
-#main {
-    display: flex;
-    height: 10vh;
-    width: 15vw;
-}
-
-#main img {
-    height: 10vh;
-    width: 15vw;
-}
 
 /* dit hoort bij de hamburger */
 
