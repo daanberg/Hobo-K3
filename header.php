@@ -11,39 +11,15 @@
 
     <link rel="stylesheet" type="text/css" href="./css/style.css"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-
 </head>
-<body>
-    <header id="nav-bar">
-    <section id="nv">
-    <img src="img/logo2.png" alt="Logo">
-    <a href="#" class="acc"><i class="bi bi-person-circle"></i></a> 
-    <nav>
-            <section id="navbar">
-                <ul>
-                    <li><a href="./Home.php"><i class="bi bi-house-door"></i></a></li>
-                    <li><a href="#"><i class="bi bi-search"></i></a></li>
-                    <li><a href="#"><i class="bi bi-clock-history"></i></a></li>
-                    <li><a href="#"><i class="bi bi-graph-up"></i></a></li>
-                </ul>
-            </section>
-            <!-- <section id="navbar-small">
-            <details>
-                <summary>
-                    <h1>☰</h1>
-                </summary>
-                <nav id="item-nav">
-                    <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    </nav>
-            </details>
-            </section> -->
-        </nav>
-        </section>
-    </header>
+    <body>
+        <header>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </header>
     </body>
 </html>
