@@ -50,14 +50,26 @@ a:hover:after{
 
 .row-home{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .row-home img{
     width: 250px;
-    margin: 5px;
+    margin-left: 1vw;
 }
 
+.row-home2{
+    display: flex;
+    align-items: center;
+}
+.row-home2 img{
+    width: 250px;
+    margin-left: 1vw;
+}
+h1 {
+    display: flex;
+    margin-left: 1vw;
+}
+/* dit hoort bij de pagina */
 
-/* dit hoort bij de hamburger */
+
 

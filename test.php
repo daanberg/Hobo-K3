@@ -16,7 +16,7 @@
     <header>
                 
             <nav>
-                <a href="#"><img src="img/logo2.png" alt="logo2.png" width="150px" height="60px"></a>
+                <img src="img/logo2.png" alt="logo2.png" width="150px" height="60px">
                 <a href="#">Home</a>
                 <a href="#">History</a>
                 <a href="#">New & popular</a>
@@ -32,26 +32,12 @@
 
         ?>
 
-        <?php
-              $conn = new mysqli($host, $user, $pass, $database); 
-              $sql = "SELECT SerieTitel FROM serie WHERE SerieId = 5;"; 
-              
-              $result = $conn->query($sql); 
-              
-              if($result){
-                 while ($row = $result->fetch_object()){
-                 echo$row->SerieTitel;
-             }
-              $result->close();
-              $conn->close();
-              }
-         ?>
         <h1>Recommendations</h1>
 
         <section class="row-home">
         <?php
             $conn = new mysqli($host, $user, $pass, $database); 
-             $sql = "SELECT SerieID FROM serie LIMIT 5;"; 
+             $sql = "SELECT SerieID FROM serie LIMIT 6;"; 
              
              $result = $conn->query($sql); 
              
@@ -63,8 +49,29 @@
              $conn->close();
              }
         ?>
-    </section>
-    <h1>Zojuist afgekeken</h1>
 
+        </section>
+
+        <section class="teskt2">
+            <h1>Zojuist afgekeken</h1>
+        </section>
+        
+        <section class="row-home2">
+        
+        <?php
+            $conn = new mysqli($host, $user, $pass, $database); 
+             $sql = "SELECT SerieID FROM serie LIMIT 6;"; 
+             
+             $result = $conn->query($sql); 
+             
+             if($result){
+                foreach($result->fetch_all() as $row){
+                    echo "<img src='img/0000".$row[0].".jpg' >";
+            }
+             $result->close();
+             $conn->close();
+             }
+        ?>
+        </section>  
 </body>
 </html>
