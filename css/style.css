@@ -1,19 +1,13 @@
-
-@media screen and (min-width: 1200px){ /*Desktop*/
-    body{
-        height: 100px;
+    ul {
+        list-style-type: none;
+        list-style: none;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
     }
-    #nav-bar img{
-        height: 80vh;
-        position: relative;
-        left: -25vw;
-        top: -32vh;
-    }
-    .acc{
-        font-size: 4rem;
-        position: relative;
-        top: -68.5vh;
-        left: 20vw;
+    
+    li {
+        display: inline;
     }
 
     a:link, a:visited{
@@ -21,28 +15,9 @@
         text-decoration: none;
     } 
 
-    ul li{
-        list-style: none;
-        text-decoration: none;
-        margin-left: 3vw;
-        font-size: 2.5rem;
-        margin-top: 1.5vh;
-    }
 
-    #navbar{
-      position: relative;
-      top: -43vh;
-      left: -3vw;
-    }
-    .row-home{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .row-home img{
-        width: 250px;
-        margin: 5px;
-    }
+@media screen and (min-width: 1200px){ /*Desktop*/
+
 }
 
 @media screen and (min-width: 100px) and (max-width:767.9px){ /*Tablet*/
