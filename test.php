@@ -20,7 +20,13 @@
                 <a href="#">Home</a>
                 <a href="#">History</a>
                 <a href="#">New & popular</a>
+
+                <div class="nav2">
+                    <a href=""><button><h1>Account</h1></button></a>
+                </div>
             </nav>
+
+            
     </header>   
 
             
