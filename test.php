@@ -38,7 +38,7 @@
 
         ?>
 
-        <h1>Recommendations</h1>
+        <h1>Trending</h1>
 
         <section class="row-home">
         <?php
@@ -59,7 +59,7 @@
         </section>
 
         <section class="teskt2">
-            <h1>Zojuist afgekeken</h1>
+            <h1>Recommendations</h1>
         </section>
         
         <section class="row-home2">
