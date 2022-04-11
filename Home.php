@@ -19,35 +19,9 @@
         ?>
 
     <section class="banner">
-        <h1>        <?php
-            $conn = new mysqli($host, $user, $pass, $database); 
-             $sql = "SELECT SerieTitel FROM serie WHERE SerieId = 5;"; 
-             
-             $result = $conn->query($sql); 
-             
-             if($result){
-                while ($row = $result->fetch_object()){
-                echo$row->SerieTitel;
-            }
-             $result->close();
-             $conn->close();
-             }
-        ?></h1>
-        <p><?php
-              $conn = new mysqli($host, $user, $pass, $database); 
-              $sql = "SELECT SerieTitel FROM serie WHERE SerieId = 5;"; 
-              
-              $result = $conn->query($sql); 
-              
-              if($result){
-                 while ($row = $result->fetch_object()){
-                 echo$row->SerieTitel;
-             }
-              $result->close();
-              $conn->close();
-              }
-         ?>
-        ?></p>
+        <img src="./img/Narcos_banner.jpg" alt="Banner">
+        <h1>Narcos: Mexico</h1>
+        <p></p>
     </section>
     <h1>Trending</h1>
     <section class="row-home">
