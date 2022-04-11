@@ -1,14 +1,14 @@
-*{
+body{
     background-color: #483D3D;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-#Pfp1{
+.Pfp1{
     flex-direction: column;
 }
 
-#Pfp2{
+.Pfp2{
     flex-direction: column;
 }
 
@@ -40,11 +40,11 @@ a {
         color: #ffffff;
     }
 
-   .img1{
+   .imgs{
         display: block;
-        border-radius: 5%;
-        height: 150px;
-        width: 150px;
+        border-radius: 50%;
+        height: 15vh;
+        width: 15vh;
         margin: 0 20px;
    }
 

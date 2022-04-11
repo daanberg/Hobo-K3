@@ -10,14 +10,14 @@
 <body>
     <button type="button" id="Button" onclick="window.location.href='./Profile_edit.php'">profiel bewerken</button>
     <section id="Alles">
-            <section id="Pfp1">
-                <img class="img1" src="./img/DaanPFP.jpg" alt="Pfp Daan">
-                <A HREF="./Home.php">Daan</A>
-            </section> 
-            <section id="Pfp2">
-                <img class="img1" src="./img/AddAccount.png" alt="Add Pfp">
-                <A HREF="#">Account toevoegen</A>
-            </section>
+            <div id="Pfp1">
+                <img class="imgs" src="./img/DaanPFP.jpg" alt="Pfp Daan">
+                <a href="#">Daan</a>
+            </div> 
+            <div class="Pfp2">
+                <img class="imgs" src="./img/AddAccount.png" alt="Add Pfp">
+                <a href="#">Account toevoegen</a>
+            </div>
 
     </section>
 </body>
