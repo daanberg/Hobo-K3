@@ -16,11 +16,13 @@
     <header>
                 
             <nav>
-                <img src="img/logo2.png" alt="logo2.png" width="150px" height="60px">
-                <a href="#">Home</a>
-                <a href="#">History</a>
-                <a href="#">New & popular</a>
-
+                <div class="nav1">
+                    <img src="img/logo2.png" alt="logo2.png" width="150px" height="60px">
+                    <a href="#">Home</a>
+                    <a href="#">History</a>
+                    <a href="#">New & popular</a>
+                </div>  
+                
                 <div class="nav2">
                     <a href=""><button><h1>Account</h1></button></a>
                 </div>
