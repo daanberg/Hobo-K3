@@ -11,15 +11,21 @@ body{
         justify-content: space-around;
     }
 
-    #uprow a{
+    #uprow p{
         text-decoration: none;
         color: whitesmoke;
         margin-top: 10vh;
     }
     
+    .editt{
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: whitesmoke;
+        margin-top: 9vh;
+    }
+
     .logo{
         display: flex;
-        
         margin-top: 3vh;
         width: 50vw;
         height: 20vw;
@@ -47,6 +53,19 @@ body{
         padding: 10vh;
     }
 
+    #pfprow p{
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    #pfprow2 p{
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+
     .imgs{
         height: 10vh;
         width: 10vh;
@@ -64,12 +83,19 @@ body{
         justify-content: space-around;
     }
 
-    #uprow a{
+    #uprow p{
         text-decoration: none;
         color: whitesmoke;
         margin-top: 5vh;
     }
     
+    .editt{
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: whitesmoke;
+        margin-top: 9vh;
+    }
+
     .logo{
         display: flex;
         margin-top: 0;
@@ -92,6 +118,12 @@ body{
         flex-direction: row;
     }
     
+    #nomob p{
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+
     #pfprow{
         display: none;
     }
@@ -114,7 +146,14 @@ body{
         padding: 0;
     }
 
-    #uprow a{
+    .editt{
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: whitesmoke;
+        margin-top: 14vh;
+    }
+
+    #uprow p{
         text-decoration: none;
         color: whitesmoke;
         margin-top: 5vh;
@@ -140,6 +179,12 @@ body{
         justify-content: center;
         justify-content: space-evenly;
         flex-direction: row;
+    }
+
+    #nomob p{
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
     }
     
     #pfprow{

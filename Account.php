@@ -10,7 +10,7 @@
 <body>
     <div id="uprow">
         <img class="logo"; src="./img/logo.png" alt="Logo">
-        <a href="./Profile_edit.php">Edit</a> 
+        <a class="editt" href="./Profile_edit.php">Edit</a> 
     </div>
 
     <p class="shline">Who's watching?</p>
@@ -34,7 +34,9 @@
                 <p>Voorbeeld</p>
             </div> 
             <div>
-                <img class="imgs" onclick="#" src="./img/AddAccount.png" alt="Add Pfp">
+                <a href="./Profile-Edit.php">
+                    <img class="imgs" onclick="#" src="./img/AddAccount.png" alt="Add Pfp">
+                </a>
             </div>
 
     </section>
@@ -57,7 +59,6 @@
         <div>
             <img class="imgs" onclick="#" src="./img/AddAccount.png" alt="Add Pfp">
         </div>
-
     </section>
 </body>
 </html>
