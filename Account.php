@@ -10,13 +10,12 @@
 <body>
     <button type="button" id="Button" onclick="window.location.href='./Profile_edit.php'">profiel bewerken</button>
     <section id="Alles">
-            <div id="Pfp1">
+            <div>
                 <img class="imgs" src="./img/DaanPFP.jpg" alt="Pfp Daan">
                 <a href="#">Daan</a>
             </div> 
-            <div class="Pfp2">
-                <img class="imgs" src="./img/AddAccount.png" alt="Add Pfp">
-                <a href="#">Account toevoegen</a>
+            <div>
+                <img class="imgs" onclick="#" src="./img/AddAccount.png" alt="Add Pfp">
             </div>
 
     </section>

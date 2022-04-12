@@ -4,16 +4,9 @@ body{
     text-align: center;
 }
 
-.Pfp1{
-    flex-direction: column;
-}
-
-.Pfp2{
-    flex-direction: column;
-}
-
 a {
     text-decoration: none;
+    color: #ffffff;
 }
 
 @media screen and (min-width: 1200px){ /*Desktop*/
@@ -40,30 +33,27 @@ a {
         color: #ffffff;
     }
 
-   .imgs{
+    .imgs{
         display: block;
         border-radius: 50%;
         height: 15vh;
         width: 15vh;
         margin: 0 20px;
    }
-
-   a{
-       color: #ffffff;
-   }
-   
 }
     
-@media screen and (min-width: 100px) and (max-width:767.9px){ /*Telefoon*/
-    #Button{            display: flex;
+@media screen and (min-width: 768px) and (max-width:1199px){ /*Tablet*/
+    #Button{            
+        display: flex;
         background-color:#ffffff8c;
         border: none;
-        padding: 12px 10px;            text-align: center;
+        padding: 12px 10px;            
+        text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-            border-radius: 4px;
-            float: right;
+        border-radius: 4px;
+        float: right;
         }
 
         #Alles{
@@ -71,24 +61,61 @@ a {
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            padding-top: 15vw;
+            color: #ffffff;
+        }
+        
+        .img1{
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            margin: 0 10vh;
+        }
+
+        .imgs{
+            display: block;
+            border-radius: 50%;
+            height: 10vh;
+            width: 10vh;
+            margin: 0 20px;
+       }
+}
+
+@media screen and (min-width: 100px) and (max-width:767.9px){ /*Telefoon*/
+    #Button{            
+        display: flex;
+        background-color:#ffffff8c;
+        border: none;
+        padding: 12px 10px;            
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;
+        float: right;
+        }
+
+        #Alles{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             padding-top: 70vw;
             color: #ffffff;
         }
         
-           .img1{
-                border-radius: 50%;
-                height: 50px;
-                width: 50px;
-                margin: 0 20px;
-            }
+        .img1{
+            border-radius: 50%;
+            margin: 0 20px;
+        }
 
-            a{
-                color: #ffffff;
-            }
+        .imgs{
+            display: block;
+            border-radius: 50%;
+            height: 10vh;
+            width: 10vh;
+            margin: 0 20px;
+       }
 
-    }
-    
-    @media screen and (min-width: 768px) and (max-width:1199px){ /*Tablet*/
-        
     }
 
