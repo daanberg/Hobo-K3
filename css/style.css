@@ -35,7 +35,6 @@ body{
     
     #pfprow{
         display: flex;
-        justify-content: center;
         justify-content: space-evenly;
         margin-top: -10vh;
         padding: 10vh;
@@ -43,7 +42,6 @@ body{
 
     #pfprow2{
         display: flex;
-        justify-content: center;
         justify-content: space-evenly;
         margin-top: -18vh;
         padding: 10vh;
@@ -52,6 +50,10 @@ body{
     .imgs{
         height: 10vh;
         width: 10vh;
+    }
+
+    #nomob{
+        display: none;
     }
 }
     
@@ -82,21 +84,20 @@ body{
         margin-top: 10vh;
         font-size: 1.5rem;
     }
-    
-    #pfprow{
+
+    #nomob{
         display: flex;
         justify-content: center;
         justify-content: space-evenly;
-        margin-top: -10vh;
-        padding: 10vh;
+        flex-direction: row;
+    }
+    
+    #pfprow{
+        display: none;
     }
 
     #pfprow2{
-        display: flex;
-        justify-content: center;
-        justify-content: space-evenly;
-        margin-top: -18vh;
-        padding: 10vh;
+        display: none;
     }
 
     .imgs{
@@ -122,8 +123,8 @@ body{
     .logo{
         display: flex;
         margin-top: 0;
-        width: 30vw;
-        height: 15vw;
+        width: 27vw;
+        height: 12vw;
     }
 
     .shline{
@@ -134,25 +135,24 @@ body{
         font-size: 1.5rem;
     }
     
-    #pfprow{
+    #nomob{
         display: flex;
         justify-content: center;
         justify-content: space-evenly;
-        margin-top: -10vh;
-        padding: 10vh;
+        flex-direction: row;
+    }
+    
+    #pfprow{
+        display: none;
     }
 
     #pfprow2{
-        display: flex;
-        justify-content: center;
-        justify-content: space-evenly;
-        margin-top: -18vh;
-        padding: 10vh;
+        display: none;
     }
 
     .imgs{
-        height: 10vh;
-        width: 10vh;
+        height: 20vh;
+        width: 20vh;
     }
 }
 
