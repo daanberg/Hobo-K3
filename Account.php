@@ -8,11 +8,29 @@
     <title>Account</title>
 </head>
 <body>
-    <button type="button" id="Button" onclick="window.location.href='./Profile_edit.php'">profiel bewerken</button>
-    <section id="Alles">
+    <div id="uprow">
+        <img class="logo"; src="./img/logo.png" alt="Logo">
+        <a href="./Profile_edit.php">Edit</a> 
+    </div>
+
+    <p class="shline">Who's watching?</p>
+
+    <section id="pfprow">
             <div>
-                <img class="imgs" src="./img/DaanPFP.jpg" alt="Pfp Daan">
-                <a href="#">Daan</a>
+                <img class="imgs" src="./img/voorbeeld.jpg" alt="Pfp">
+                <p>Voorbeeld</p>
+            </div> 
+            <div>
+            <img class="imgs" src="./img/voorbeeld2.png" alt="Pfp">
+                <p>Voorbeeld</p>
+            </div>
+
+    </section>
+
+    <section id="pfprow2">
+            <div>
+                <img class="imgs" src="./img/voorbeeld3.png" alt="Pfp">
+                <p>Voorbeeld</p>
             </div> 
             <div>
                 <img class="imgs" onclick="#" src="./img/AddAccount.png" alt="Add Pfp">
