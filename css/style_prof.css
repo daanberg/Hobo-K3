@@ -3,6 +3,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
 }
+<<<<<<< Updated upstream
 
 @media screen and (min-width: 100px) and (max-width:767.9px){ /*Telefoon*/
     .logo{
@@ -23,3 +24,5 @@ body{
     }
 
 }
+=======
+>>>>>>> Stashed changes
