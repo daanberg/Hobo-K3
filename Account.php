@@ -19,18 +19,18 @@
 
     <section id="pfprow">
             <div>
-                <img class="imgs" src="./img/voorbeeld.jpg" alt="Pfp">
+                <img class="imgs" src="./img/pfp.png" alt="Pfp">
                 <p>Voorbeeld</p>
             </div> 
             <div>
-            <img class="imgs" src="./img/voorbeeld2.png" alt="Pfp">
+            <img class="imgs" src="./img/pfp.png" alt="Pfp">
                 <p>Voorbeeld</p>
             </div>
     </section>
 
     <section id="pfprow2">
             <div>
-                <img class="imgs" src="./img/voorbeeld3.png" alt="Pfp">
+                <img class="imgs" src="./img/pfp.png" alt="Pfp">
                 <p>Voorbeeld</p>
             </div> 
             <div>
@@ -45,15 +45,15 @@
 
     <section id="nomob">
         <div>
-            <img class="imgs" src="./img/voorbeeld.jpg" alt="Pfp">
+            <img class="imgs" src="./img/pfp.png" alt="Pfp">
                 <p>Voorbeeld</p>
             </div>
         <div>
-            <img class="imgs" src="./img/voorbeeld2.png" alt="Pfp">
+            <img class="imgs" src="./img/pfp.png" alt="Pfp">
                 <p>Voorbeeld</p>
             </div>
         <div>
-            <img class="imgs" src="./img/voorbeeld3.png" alt="Pfp">
+            <img class="imgs" src="./img/pfp.png" alt="Pfp">
                 <p>Voorbeeld</p>
             </div>
         <div>
