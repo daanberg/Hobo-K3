@@ -1,0 +1,25 @@
+body{
+    background-color: #483D3D;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+@media screen and (min-width: 100px) and (max-width:767.9px){ /*Telefoon*/
+    .logo{
+        height: 10vh;
+        width: 20vh;
+    }
+
+    #toprow{
+    }
+
+
+    #bottomrow{
+        display: flex;
+    }
+
+    #taal{
+        display: flex;
+    }
+
+}
