@@ -4,27 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/adminstyle.css">
+    <title>Admin</title>
 </head>
 <body>
-    <form method="post" action="admin.php">
-        <h1>Zoek klanten</h1>
-        <input type="text" name="search" required/>
-        <input type="submit" value="Search"/>
-        <link rel="stylesheet" type="text/css" href="./css/adminstyle.css">
+    <section id="searchengine">
+        <form method="post" action="admin.php">
+            <h1>Zoek klanten</h1>
+            <input type="text" name="search" required/>
+            <input type="submit" value="Search"/>
+            <br></br>
+        </form>
+    </section>
+    <section id="searchenginebot">
+        <?php
+            // (B) PROCESS SEARCH WHEN FORM SUBMITTED
+            if (isset($_POST["search"])) {
+            // (B1) SEARCH FOR USERS
+            require "searchAdmin.php";
+
+            // (B2) DISPLAY RESULTS
+            if (count($results) > 0) { foreach ($results as $r) {
+                printf("<div>%s %s  =  %s</div>", $r["Voornaam"], $r["Achternaam"], $r["Email"]);
+            }} else { echo "Geen resultaten gevonden"; }
+            }
+        ?>
+    </section>
+
+        <!-- Nu zijn het type="button" omdat submit alle recent gezochte namen cleared -->
+
+    <form>
+        <input type="button" value="Create">
+        <input type="button" value="Read">
+        <input type="button" value="Update">
+        <input type="button" value="Delete">
     </form>
 
-    <?php
-        // (B) PROCESS SEARCH WHEN FORM SUBMITTED
-        if (isset($_POST["search"])) {
-        // (B1) SEARCH FOR USERS
-        require "searchAdmin.php";
-
-        // (B2) DISPLAY RESULTS
-        if (count($results) > 0) { foreach ($results as $r) {
-            printf("<div>%s %s  =  %s</div>", $r["Voornaam"], $r["Achternaam"], $r["Email"]);
-        }} else { echo "Geen resultaten gevonden"; }
-        }
-    ?>
 </body>
 </html>
