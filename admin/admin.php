@@ -22,7 +22,7 @@
 
         // (B2) DISPLAY RESULTS
         if (count($results) > 0) { foreach ($results as $r) {
-            printf("<div>%s - %s</div>", $r["Voornaam"], $r["Email"]);
+            printf("<div>%s %s  =  %s</div>", $r["Voornaam"], $r["Achternaam"], $r["Email"]);
         }} else { echo "Geen resultaten gevonden"; }
         }
     ?>
