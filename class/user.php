@@ -8,28 +8,14 @@ require_once 'DbConfig.php';
             return json_decode($verifyResponse);
         }
 
-        public function login($username, $password, $captchaResponse){
-        try {
-            $user = $this->getUser($username);
-            $responseData = $this->checkReCaptcha($captchaResponse);
-
-            if (!$user) {
-                throw new Exception("<p class='errorMessage'>User does not exist. </p>");
-            }
-            if (!password_verify($password, $user->password)) {
-                throw new Exception("<p class='errorMessage'>Passwords is not verified. </p>");
-            }
-            if (!isset($responseData->success) || !$responseData->success) {
-                throw new Exception("<p class='errorMessage'>Failed to complete reCaptcha. </p>");
-            }
-
-            session_start();
-            $_SESSION['loggedIn'] = true;
-            header("Location: index.php");
-        } catch (Exception $e) {
-            return $e->getMessage();
-        }
-    }
+    public function getProfile(){
+        $sql = "SELECT * FROM profiel INNER JOIN klant ON klant.KlantNr ='". $_SESSION['KlantNr'] . "' WHERE klant.KlantNr = profiel.KlantNummer;";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_OBJ); 
     }
 
+
+
+}
 ?>
