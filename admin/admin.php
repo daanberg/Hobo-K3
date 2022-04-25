@@ -7,6 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>admin.php</h1>
+    <form method="post" action="admin.php">
+        <h1>Zoek klanten</h1>
+        <input type="text" name="search" required/>
+        <input type="submit" value="Search"/>
+        <link rel="stylesheet" type="text/css" href="./css/adminstyle.css">
+    </form>
+
+    <?php
+        // (B) PROCESS SEARCH WHEN FORM SUBMITTED
+        if (isset($_POST["search"])) {
+        // (B1) SEARCH FOR USERS
+        require "searchAdmin.php";
+
+        // (B2) DISPLAY RESULTS
+        if (count($results) > 0) { foreach ($results as $r) {
+            printf("<div>%s - %s</div>", $r["Voornaam"], $r["Email"]);
+        }} else { echo "Geen resultaten gevonden"; }
+        }
+    ?>
 </body>
 </html>
