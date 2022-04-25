@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
     <title>Hobo|Home</title>
 </head>
     <body>
@@ -18,8 +19,8 @@
         $database = "hobo22";   
         ?>
 
-    <section class="banner">
-        <img src="./img/Narcos_banner.jpg" alt="Banner">
+    <section id="banner">
+        <img src="./img/Narcos_banner.jpg" alt="Banner" class="ban-foto">
         <h1>Narcos: Mexico</h1>
         <p></p>
     </section>
@@ -33,7 +34,7 @@
              
              if($result){
                 foreach($result->fetch_all() as $row){
-                    echo "<img src='img/0000".$row[0].".jpg' >";
+                    echo "<img src='img/".$row[0].".jpg' >";
             }
              $result->close();
              $conn->close();
