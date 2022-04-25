@@ -16,3 +16,24 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (min-width: 100px) and (max-width:767.9px){ /*Telefoon*/
+    .CRUDBUTTONS{
+        position: relative;
+        right: -21.8%;
+    }    
+}
+
+@media screen and (min-width: 768px) and (max-width:1199px){ /*Tablet*/
+    .CRUDBUTTONS{
+        position: relative;
+        right: -37%;
+    }    
+}
+
+@media screen and (min-width: 1200px){ /*Desktop*/
+    .CRUDBUTTONS{
+        position: relative;
+        right: -42.8%;
+    }    
+}

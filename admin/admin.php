@@ -10,7 +10,7 @@
 <body>
     <section id="searchengine">
         <form method="post" action="admin.php">
-            <h1>Zoek klanten</h1>
+            <h1>Zoek uw Klant</h1>
             <input type="text" name="search" required/>
             <input type="submit" value="Search"/>
             <br></br>
@@ -32,13 +32,14 @@
     </section>
 
         <!-- Nu zijn het type="button" omdat submit alle recent gezochte namen cleared -->
-
-    <form>
-        <input type="button" value="Create">
-        <input type="button" value="Read">
-        <input type="button" value="Update">
-        <input type="button" value="Delete">
-    </form>
+    <section class="CRUDBUTTONS">
+        <form>
+            <input type="button" value="Create">
+            <input type="button" value="Read">
+            <input type="button" value="Update">
+            <input type="submit" value="Delete">
+        </form>
+    </section>
 
 </body>
 </html>
