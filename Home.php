@@ -19,12 +19,12 @@
         ?>
 
     <section id="banner">
-        <img src="./img/Narcos_banner.jpg" alt="Banner" class="ban-foto">
+        <img src="./img/Narcos_banner.jpg" alt="Banner">
         <h1>Narcos: Mexico</h1>
         <p></p>
     </section>
     <h1>Trending</h1>
-    <section class="row-home">
+    <section id="row-home">
         <?php
             $conn = new mysqli($host, $user, $pass, $database); 
              $sql = "SELECT SerieID FROM serie LIMIT 5;"; 
@@ -41,7 +41,7 @@
         ?>
     </section>
     <h1>Keuze van de makers</h1>
-    <section class="row-home">
+    <section id="row-home">
         <?php
             $conn = new mysqli($host, $user, $pass, $database); 
              $sql = "SELECT SerieID FROM serie LIMIT 5;"; 

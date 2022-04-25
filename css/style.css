@@ -14,18 +14,22 @@ body{
 
 
 @media screen and (min-width: 1200px){ /*Desktop*/
-    .banner{
-        margin: 0;
+    #banner{
+        margin: -8px;
+    }
+
+    #banner img{
         max-width: 100%;
     }
 
-    .banner img{
-        max-width: 100%;
-    }
-
-    .row-home{
+    #row-home{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+    }
+
+    #row-home img{
+        padding: 10px;
         height: 25vw;
         width: 25vw;
     }
