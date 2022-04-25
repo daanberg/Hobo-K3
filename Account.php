@@ -7,7 +7,11 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Account</title>
 </head>
+
+
+
 <body>
+
     <div id="uprow">
         <img class="logo"; src="./img/logo.png" alt="Logo">
         <a class="editt" href="./Profile_edit.php">Edit</a> 

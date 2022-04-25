@@ -8,7 +8,6 @@
     <title>Edit Profile</title>
 </head>
 <body>
-<<<<<<< Updated upstream
     <img class="logo"  src="./img/logo.png">
 
     <div id="toprow">    
@@ -24,12 +23,5 @@
         <input type="submit" value="Submit">
     </form>
 
-<!-- Mobile -->
-
-<!-- Tablet and Big screen -->
-
-=======
-    <img src="./img/logo.png">
->>>>>>> Stashed changes
 </body>
 </html>
