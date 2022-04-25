@@ -1,3 +1,13 @@
+<?php
+require_once 'class/user.php';
+
+$user = new User();
+
+if(isset($_POST['login'])){
+	$user->login($_POST);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,23 +33,20 @@
     <main>
         <div class="login-box">
             <h2>Login</h2>
-            <form>
+            <form method="post">
               <div class="user-box">
-                <input type="text" name="" required="">
+                <input type="text" name="username" required="">
                 <label>Username</label>
               </div>
               <div class="user-box">
-                <input type="password" name="" required="">
+                <input type="password" name="password" required="">
                 <label>Password</label>
               </div>
-              <a href="Home.php">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Login
-              </a>
+              <div class="submit-box">
+            <input type="submit" name="login" value='login'>
+            </div>
             </form>
+         
             <br>
             <br>
             <br>

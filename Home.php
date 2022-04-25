@@ -1,3 +1,8 @@
+<?php
+    require_once 'class/user.php';
+
+    $user = new User();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,52 +16,40 @@
         <!-- <header>
             <?php include('./header.php')?>
         </header> -->
-        <?php
-        $host = "localhost";
-        $user = "root";
-        $pass = "";
-        $database = "hobo22";   
-        ?>
+    
 
-    <section class="banner">
+    <section id="banner">
         <img src="./img/Narcos_banner.jpg" alt="Banner">
-        <h1>Narcos: Mexico</h1>
-        <p></p>
     </section>
+
+    <div class="tekst1">
+        <h1>Narcos: Mexico</h1>
+        <p>id komt hier!</p>
+    </div>
+
+        <br></br>    
+
     <h1>Trending</h1>
-    <section class="row-home">
+ 
+    <section id="row-home">
         <?php
-            $conn = new mysqli($host, $user, $pass, $database); 
-             $sql = "SELECT SerieID FROM serie LIMIT 5;"; 
-             
-             $result = $conn->query($sql); 
-             
-             if($result){
-                foreach($result->fetch_all() as $row){
-                    echo "<img src='img/0000".$row[0].".jpg' >";
+            foreach($user->getPic() as $pic){
+                echo "<img src='img/".$pic->serieID.".jpg' >";
             }
-             $result->close();
-             $conn->close();
-             }
         ?>
     </section>
+
+        <br></br>        
+
     <h1>Keuze van de makers</h1>
-    <section class="row-home">
+
+    <section id="row-home">
         <?php
-            $conn = new mysqli($host, $user, $pass, $database); 
-             $sql = "SELECT SerieID FROM serie LIMIT 5;"; 
-             
-             $result = $conn->query($sql); 
-             
-             if($result){
-                foreach($result->fetch_all() as $row){
-                    echo "<img src='img/0000".$row[0].".jpg' >";
+             foreach($user->getPic1() as $pic){
+                echo "<img src='img/".$pic->serieID.".jpg' >";
             }
-             $result->close();
-             $conn->close();
-             }
             ?>
     </section>
-    </section>
+
     </body>
 </html>
