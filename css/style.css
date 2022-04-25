@@ -5,18 +5,73 @@ body{
 }
 
 @media screen and (min-width: 100px) and (max-width:767.9px){ /*Telefoon*/
+    #banner{
+        margin: -8px;
+    }
 
+    #banner img{ 
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .tekst1{
+        position: absolute;
+        margin-top: -45vw;
+        padding: -10px;
+    }
+    
+
+    #row-home{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    #row-home img{
+        height: 36vw;
+        width: 20vw;
+        max-width: 100%;
+    }
+
+    h1{
+        font-size: 1rem;
+    }
 }
     
 @media screen and (min-width: 768px) and (max-width:1199px){ /*Tablet*/
+    #banner{
+        margin: -8px;
+    }
 
+    #banner img{
+        max-width: 100%;
+    }
+
+    .tekst1{
+        position: absolute;
+        margin-top: -45vw;
+        font-size: 1.75rem;
+    }
+
+    #row-home{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #row-home img{
+        padding: 10px;
+        height: 25vw;
+        width: 25vw;
+    }
 }
 
 
 @media screen and (min-width: 1200px){ /*Desktop*/
     #banner{
         margin: -8px;
-
     }
 
     #banner img{

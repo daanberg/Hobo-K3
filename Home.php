@@ -20,10 +20,17 @@
 
     <section id="banner">
         <img src="./img/Narcos_banner.jpg" alt="Banner">
-        <h1 class="tekst1">Narcos: Mexico</h1>
-        <p>id</p>
     </section>
+
+    <div class="tekst1">
+        <h1>Narcos: Mexico</h1>
+        <p>id komt hier!</p>
+    </div>
+
+        <br></br>    
+
     <h1>Trending</h1>
+ 
     <section id="row-home">
         <?php
             foreach($user->getPic() as $pic){
@@ -31,7 +38,11 @@
             }
         ?>
     </section>
+
+        <br></br>        
+
     <h1>Keuze van de makers</h1>
+
     <section id="row-home">
         <?php
              foreach($user->getPic1() as $pic){
@@ -39,6 +50,6 @@
             }
             ?>
     </section>
-    </section>
+
     </body>
 </html>
