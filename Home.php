@@ -19,7 +19,7 @@
     
 
     <section id="banner">
-        <img src="./img/Narcos_banner.jpg" alt="Banner">
+        <img src="./img/Narcos_banner.png" alt="Banner">
     </section>
 
     <div class="tekst1">
