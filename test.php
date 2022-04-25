@@ -24,7 +24,7 @@
                 </div>  
                 
                 <div class="nav2">
-                    <a href=""><button><h1>Account</h1></button></a>
+                    <img src=""></img>
                 </div>
             </nav>
 
