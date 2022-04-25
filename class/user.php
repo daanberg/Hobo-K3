@@ -46,19 +46,36 @@ require_once 'DbConfig.php';
 
         public function login($data){
             try{
+                
                 $user = $this->getUser($data['username']);
-                if(!$user){
-                    throw new Exception("gebruiker bestaat niet.");
+                $pass = $this->getUser($passwordEncr);
+
+                switch ($user->username){
+                    case "Admin":
+                        if(!password_verify($data['password'], $user->password)){
+                            throw new Exception("wachtwoord is incorrect.");
+                        }else{header("Location: ./admin/admin.php");}
+                        break;
+                    case "Content_Manager":
+                        if(!password_verify($data['password'], $user->password)){
+                            throw new Exception("wachtwoord is incorrect.");
+                        }else{header("Location: ./admin/cm.php");}
+                        break;
+                    default:
+                    if(!password_verify($data['password'], $user->password)){
+                        throw new Exception("wachtwoord is incorrect.");
+                    }else{header("Location: Home.php");}
                 }
-                if(!password_verify($data['password'], $user->password)){
-                    throw new Exception("wachtwoord is incorrect.");
-                }
+                // if(!$user){
+                //     throw new Exception("gebruiker bestaat niet.");
+                // }
+                // if(!password_verify($data['password'], $user->password)){
+                //     throw new Exception("wachtwoord is incorrect.");
+                // }
                 session_start();
                 $_SESSION['loggedin'] = true;
                 $_SESSION['username'] = $user->username;
                     
-                header("location: Home.php");
-
             }catch(Exception $e){
                 echo $e->getMessage();
             }
