@@ -15,7 +15,8 @@ body{
 
 @media screen and (min-width: 1200px){ /*Desktop*/
     .banner{
-        margin: -10px;
+        margin: 0;
+        max-width: 100%;
     }
 
     .banner img{
