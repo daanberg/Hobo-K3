@@ -20,24 +20,12 @@
 
     <section id="banner">
         <img src="./img/Narcos_banner.jpg" alt="Banner">
-        <h1>Narcos: Mexico</h1>
-        <p></p>
+        <h1 class="tekst1">Narcos: Mexico</h1>
+        <p>id</p>
     </section>
     <h1>Trending</h1>
     <section id="row-home">
         <?php
-            // $conn = new mysqli($host, $user, $pass, $database); 
-            //  $sql = "SELECT SerieID FROM serie LIMIT 5;"; 
-             
-            //  $result = $conn->query($sql); 
-             
-            //  if($result){
-            //     foreach($result->fetch_all() as $row){
-            //         echo "<img src='img/".$row[0].".jpg' >";
-            // }
-            //  $result->close();
-            //  $conn->close();
-            //  }
             foreach($user->getPic() as $pic){
                 echo "<img src='img/".$pic->serieID.".jpg' >";
             }

@@ -16,10 +16,17 @@ body{
 @media screen and (min-width: 1200px){ /*Desktop*/
     #banner{
         margin: -8px;
+
     }
 
     #banner img{
         max-width: 100%;
+    }
+
+    .tekst1{
+        position: absolute;
+        margin-top: -45vw;
+        font-size: 4rem;
     }
 
     #row-home{
