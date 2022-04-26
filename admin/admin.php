@@ -29,6 +29,7 @@
             }} else { echo "Geen resultaten gevonden"; }
             }
         ?>
+
     </section>
 
         <!-- Nu zijn het type="button" omdat submit alle recent gezochte namen cleared -->
