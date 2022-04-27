@@ -58,6 +58,9 @@ a:hover:after{
 .row-home{
     display: flex;
     align-items: center;
+    background-color: #362e2e 50px;
+    justify-content: space-around 10px;
+
 }
 .row-home img{
     width: 260px;
@@ -92,7 +95,7 @@ h1 {
     background-color: #544848;
     color: white;
     border-radius: 15px; 
-    
+    float: right 20px;
 }
 
 nav img {
