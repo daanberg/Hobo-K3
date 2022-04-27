@@ -23,9 +23,6 @@
                     <a href="#">New & popular</a>
                 </div>  
                 
-                <div class="nav2">
-                    <a href=""><button><h1>Account</h1></button></a>
-                </div>
             </nav>
 
             
@@ -51,7 +48,7 @@
              
              if($result){
                 foreach($result->fetch_all() as $row){
-                    echo "<img src='img/0000".$row[0].".jpg' >";
+                    echo "<img src='img/".$row[0].".jpg' >";
             }
              $result->close();
              $conn->close();
@@ -74,7 +71,7 @@
              
              if($result){
                 foreach($result->fetch_all() as $row){
-                    echo "<img src='img/0000".$row[0].".jpg' >";
+                    echo "<img src='img/".$row[0].".jpg' >";
             }
              $result->close();
              $conn->close();

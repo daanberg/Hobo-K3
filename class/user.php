@@ -29,7 +29,7 @@ require_once 'DbConfig.php';
         } catch (Exception $e) {
             return $e->getMessage();
         }
-    }
+      }
     }
 
 ?>

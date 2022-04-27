@@ -16,8 +16,7 @@ nav{
     width: 45vw;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-left: 20px;
+    justify-content: center;
 }
 
 .nav1 {
@@ -97,7 +96,7 @@ h1 {
 }
 
 nav img {
-    margin-left: 10px;
+
     cursor: pointer;
 }
 
