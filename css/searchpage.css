@@ -19,10 +19,7 @@ body{
     }
 
     .row_posters{
-        display: flex;
-        flex-direction: row;
-        height: 25vw;
-        width: 20vw;
+
     }
 }
 
@@ -53,5 +50,17 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .row_posters{        
+        display: flex;
+        flex-direction: row;
+        height: 25vw;
+        width: 20vw;
+    }
+
+    .row_posters img{
+        display: flex;
+        justify-content: space-between;
     }
 }
