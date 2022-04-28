@@ -35,8 +35,8 @@ if(isset($_POST['login'])){
             <h2>Login</h2>
             <form method="post">
               <div class="user-box">
-                <input type="text" name="username" required="">
-                <label>Username</label>
+                <input type="email" name="email" required="">
+                <label>email</label>
               </div>
               <div class="user-box">
                 <input type="password" name="password" required="">
