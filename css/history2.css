@@ -5,11 +5,6 @@
     background-color: #705c5c;
 }
 
-header .img {
-    height: 50px;
-}   
-
-
   header {
       display: flex;
       width: 100%;
@@ -47,14 +42,73 @@ header .img {
       transition: 0.2s;
   }
 
-  .account img {
-      width: 5.5%;
-      display: flex;
-      justify-content: flex-end;
-      margin-left: 57vw;
-      margin-top: 2vh;
-      cursor: pointer;
+  .row_posters img {
+      width: 16%;
+      margin-left: 3vw;
+      align-items: center;
+  }
+  
+  main h1{
+      margin-left: 3vw;
+      font-family: sans-serif, poppins;
+      color: wheat;
   }
 
 
+  /* Dropdown Button */
+    .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+  }
   
+  .dropdown img {
+      width: 8%;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-left: -2vw;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+  }
+
+  
+  .dropdown-content:after {
+      color: wheat;
+      transition: 0.3s;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      color: wheat;
+      transition: 0.3s;
+    }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: grid;
+      transition: 0.3s;    
+    } 
+  
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+      transition: 0.3s;
+    }

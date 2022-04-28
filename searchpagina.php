@@ -1,3 +1,11 @@
+<?php
+    require_once 'class/user.php';
+
+    $user = new User();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,19 +25,33 @@
                 <li><a href="#">History</a></li>
                 <li><a href="#">Trending</a></li>
                 
-                <div class="account">
+                <div class="dropdown">
                     <img src="img/account.png">
-                </div>
+                    <div class="dropdown-content">
+                        <a href="#">Account</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div
+
+                
             </ul>
         <nav>
     </header>
 
-
     <main>
-        <section class="main">
 
+    <h1>Trending</h1>
+    <br>
+    <div class="row_posters">
+        
+        <?php
+             foreach($user->getPic1() as $pic){
+                echo "<img src='img/".$pic->serieID.".jpg' >";
+            }
+        ?>
 
-        </section>
+    </div>
     </main>
 </body>
 </html>
