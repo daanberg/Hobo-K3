@@ -34,9 +34,21 @@ if(isset($_POST['register'])){
         <div class="login-box">
             <h2>Sign up</h2>
             <form method="post">
+            <div class="user-box">
+                <input type="text" name="voornaam" required>
+                <label>Voornaam</label>
+              </div>
               <div class="user-box">
-                <input type="text" name="username" required>
-                <label>username</label>
+                <input type="text" name="tussenvoegsel">
+                <label>Tussenvoegsels</label>
+              </div>
+              <div class="user-box">
+                <input type="text" name="achternaam" required>
+                <label>Surname</label>
+              </div>
+              <div class="user-box">
+                <input type="email" name="email" required>
+                <label>email</label>
               </div>
               <div class="user-box">
                 <input type="password" name="password" required>

@@ -8,12 +8,12 @@ require_once 'DbConfig.php';
             return json_decode($verifyResponse);
         }
 
-    public function getProfile(){
-        $sql = "SELECT * FROM profiel INNER JOIN klant ON klant.KlantNr ='". $_SESSION['KlantNr'] . "' WHERE klant.KlantNr = profiel.KlantNummer;";
-        $stmt = $this->connect()->prepare($sql);
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_OBJ); 
-    }
+    // public function getProfile(){
+    //     $sql = "SELECT * FROM profiel INNER JOIN klant ON klant.KlantNr ='". $_SESSION['KlantNr'] . "' WHERE klant.KlantNr = profiel.KlantNummer;";
+    //     $stmt = $this->connect()->prepare($sql);
+    //     $stmt->execute();
+    //     return $stmt->fetchAll(PDO::FETCH_OBJ); 
+    // }
 
 
         public function create($data){
@@ -22,9 +22,12 @@ require_once 'DbConfig.php';
                     throw new Exception("Wachtwoorden zijn niet gelijk");
                 }
                 $passwordEncr = password_hash($data['password'], PASSWORD_BCRYPT, ['cost' => 12]);
-                $sql = "INSERT INTO klant (username, password) VALUE (:username, :password)";
+                $sql = "INSERT INTO klant (voornaam, tussenvoegsel, achternaam, email, password) VALUE (:voornaam, :tussenvoegsel, :achternaam, :email, :password)";
                 $stmt = $this->connect()->prepare($sql);
-                $stmt->bindParam(":username", $data['username']);
+                $stmt->bindParam(":voornaam", $data['voornaam']);
+                $stmt->bindParam(":tussenvoegsel", $data['tussenvoegsel']);
+                $stmt->bindParam(":achternaam", $data['achternaam']);
+                $stmt->bindParam(":email", $data['email']);
                 $stmt->bindParam(":password", $passwordEncr);
 
                 if($stmt->execute()){
@@ -36,17 +39,17 @@ require_once 'DbConfig.php';
             }
         }
 
-        public function getUser($username){
-            $sql = "SELECT username, password FROM klant WHERE username = :username";
+        public function getUser($email){
+            $sql = "SELECT email, password FROM klant WHERE email = :email";
             $stmt= $this->connect()->prepare($sql);
-            $stmt->bindParam(":username", $username);
+            $stmt->bindParam(":email", $email);
             $stmt->execute();
             return $stmt->fetch(PDO::FETCH_OBJ);
         }
 
         public function login($data){
             try{
-                $user = $this->getUser($data['username']);
+                $user = $this->getUser($data['email']);
                 if(!$user){
                     throw new Exception("gebruiker bestaat niet.");
                 }
@@ -55,7 +58,7 @@ require_once 'DbConfig.php';
                 }
                 session_start();
                 $_SESSION['loggedin'] = true;
-                $_SESSION['username'] = $user->username;
+                $_SESSION['email'] = $user->email;
                     
                 header("location: Home.php");
 
