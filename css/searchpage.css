@@ -1,0 +1,66 @@
+body{
+    background-color: #483D3D;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+@media screen and (min-width: 100px) and (max-width:767.9px){ /*Telefoon*/
+    #searchengine{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #searchenginebot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row_posters{
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1199px){ /*Tablet*/
+    #searchengine{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #searchenginebot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){ /*Desktop*/
+    #searchengine{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #searchenginebot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row_posters{        
+        display: flex;
+        flex-direction: row;
+        height: 25vw;
+        width: 20vw;
+    }
+
+    .row_posters img{
+        display: flex;
+        justify-content: space-between;
+    }
+}
