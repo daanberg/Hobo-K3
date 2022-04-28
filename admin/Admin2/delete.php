@@ -1,21 +1,21 @@
 <?php
 // Process delete operation after confirmation
-if(isset($_POST["id"]) && !empty($_POST["id"])){
+if(isset($_POST["KlantNr"]) && !empty($_POST["KlantNr"])){
     // Include config file
     require_once "config.php";
     
     // Prepare a delete statement
-    $sql = "DELETE FROM klant WHERE KlantNr = ?";
+    $sql = "DELETE FROM klant WHERE KlantNr = :KlantNr";
     
-    if($stmt = mysqli_prepare($link, $sql)){
+    if($stmt = $pdo->prepare($sql)){
         // Bind variables to the prepared statement as parameters
-        mysqli_stmt_bind_param($stmt, "i", $param_id);
+        $stmt->bindParam(":KlantNr", $param_id);
         
         // Set parameters
         $param_id = trim($_POST["KlantNr"]);
         
         // Attempt to execute the prepared statement
-        if(mysqli_stmt_execute($stmt)){
+        if($stmt->execute()){
             // Records deleted successfully. Redirect to landing page
             header("location: index.php");
             exit();
@@ -25,18 +25,11 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     }
      
     // Close statement
-    mysqli_stmt_close($stmt);
+    unset($stmt);
     
     // Close connection
-    mysqli_close($link);
-} else{
-    // Check existence of id parameter
-    if(empty(trim($_GET["KlantNr"]))){
-        // URL doesn't contain id parameter. Redirect to error page
-        header("location: error.php");
-        exit();
-    }
-}
+    unset($pdo);
+} 
 ?>
 
 <!DOCTYPE html>
@@ -60,11 +53,11 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                     <h2 class="mt-5 mb-3">Delete Record</h2>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="alert alert-danger">
-                            <input type="hidden" name="KlantNr" value="<?php echo trim($_GET["KlantNr"]); ?>"/>
-                            <p>Weet u zeker dat u deze klant wil verwijderen?</p>
+                            <input type="hidden" name="KlantNr" value=" <?php echo trim($_GET["KlantNr"]);?> ">
+                            <p>Are you sure you want to delete this employee record?</p>
                             <p>
                                 <input type="submit" value="Yes" class="btn btn-danger">
-                                <a href="index.php" class="btn btn-secondary">No</a>
+                                <a href="index.php" class="btn btn-secondary ml-2">No</a>
                             </p>
                         </div>
                     </form>
@@ -73,4 +66,3 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         </div>
     </div>
 </body>
-</html>
