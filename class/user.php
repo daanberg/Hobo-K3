@@ -22,7 +22,7 @@ require_once 'DbConfig.php';
                     throw new Exception("Wachtwoorden zijn niet gelijk");
                 }
                 $passwordEncr = password_hash($data['password'], PASSWORD_BCRYPT, ['cost' => 12]);
-                $sql = "INSERT INTO klant (voornaam, tussenvoegsel, achternaam, email, password) VALUE (:voornaam, :tussenvoegsel, :achternaam, :email, :password)";
+                $sql = "INSERT INTO klant (voornaam, tussenvoegsel, achternaam, email, password, AboID) VALUE (:voornaam, :tussenvoegsel, :achternaam, :email, :password, 1)";
                 $stmt = $this->connect()->prepare($sql);
                 $stmt->bindParam(":voornaam", $data['voornaam']);
                 $stmt->bindParam(":tussenvoegsel", $data['tussenvoegsel']);
