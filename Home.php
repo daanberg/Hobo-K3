@@ -24,7 +24,7 @@
 
     <div class="tekst1">
         <h1>Narcos: Mexico</h1>
-        <p>Volg het begin van de Mexicaanse drugscodog in de Laren 80 in dit waargebeurde, nieuwe Narcos-verbaal over de opkomst van het Guadalajara-kartel </p>
+        <p>Volg het begin van de Mexicaanse drugscodog in de jaren 80 in dit waargebeurde, nieuwe Narcos-verbaal over de opkomst van het Guadalajara-kartel </p>
     </div>
 
         <br></br>    
