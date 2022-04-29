@@ -13,9 +13,9 @@
     <title>Hobo|Home</title>
 </head>
     <body>
-        <!-- <header>
+        <header>
             <?php include('./header.php')?>
-        </header> -->
+        </header>   
     
 
     <section id="banner">
