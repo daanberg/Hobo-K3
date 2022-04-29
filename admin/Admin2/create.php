@@ -18,6 +18,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $voornaam = $input_voornaam;
     }
     
+      // Validate salary
+      $input_achternaam = trim($_POST["achternaam"]);
+      if(empty($input_achternaam)){
+          $achternaam_err = "Please enter an surname.";     
+      } else{
+          $achternaam = $input_achternaam;
+      }
     
     // Validate salary
     $input_email = trim($_POST["email"]);
@@ -30,13 +37,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Check input errors before inserting in database
     if(empty($voornaam_err) && empty($achternaam_err) && empty($email_err)){
         // Prepare an insert statement
-        $sql = "INSERT INTO klant (voornaam, achternaam, email) VALUES (:voornaam, :achternaam, :email)";
+        $sql = "INSERT INTO klant (voornaam, achternaam, email, AboID) VALUES (:voornaam, :achternaam, :email, :aboid)";
  
         if($stmt = $pdo->prepare($sql)){
             // Bind variables to the prepared statement as parameters
             $stmt->bindParam(":voornaam", $param_voornaam);
             $stmt->bindParam(":achternaam", $param_achternaam);
             $stmt->bindParam(":email", $param_email);
+            $stmt->bindParam(":aboid", $_POST['AboID']);
             
             // Set parameters
             $param_voornaam = $voornaam;
@@ -90,7 +98,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         </div>
                         <div class="form-group">
                             <label>achternaam</label>
-                            <input type="text" class="form-control <?php echo (!empty($achternaam_err)) ? 'is-invalid' : ''; ?>"><?php echo $achternaam; ?>
+                            <input type="text" name="achternaam" class="form-control <?php echo (!empty($achternaam_err)) ? 'is-invalid' : ''; ?>"><?php echo $achternaam; ?>
+                            <span class="invalid-feedback"><?php echo $achternaam_err;?></span>
+                        </div>
+                        <div class="form-group">
+                            <label>abo</label>
+                            <input type="number" name="AboID" class="form-control <?php echo (!empty($achternaam_err)) ? 'is-invalid' : ''; ?>"><?php echo $achternaam; ?>
                             <span class="invalid-feedback"><?php echo $achternaam_err;?></span>
                         </div>
                         <div class="form-group">
