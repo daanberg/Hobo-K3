@@ -40,7 +40,7 @@ if(isset($_POST['register'])){
               </div>
               <div class="user-box">
                 <input type="text" name="tussenvoegsel">
-                <label>Tussenvoegsels</label>
+                <label>Tussenvoegsel</label>
               </div>
               <div class="user-box">
                 <input type="text" name="achternaam" required>

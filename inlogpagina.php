@@ -35,11 +35,11 @@ if(isset($_POST['login'])){
             <h2>Login</h2>
             <form method="post">
               <div class="user-box">
-                <input type="email" name="email" required="">
+                <input type="email" name="email" required>
                 <label>email</label>
               </div>
               <div class="user-box">
-                <input type="password" name="password" required="">
+                <input type="password" name="password" required>
                 <label>Password</label>
               </div>
               <div class="submit-box">
